@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-park-cream font-sans text-park-brown antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif text-park-green-dark;
+  }
+}
+
+@layer components {
+  .park-header {
+    @apply border-b-4 border-park-amber bg-park-green px-4 py-9 text-park-cream sm:px-6 sm:py-11;
+  }
+
+  .park-header__kicker {
+    @apply mb-2 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-park-sand/90;
+  }
+
+  .park-header__title {
+    @apply text-[1.75rem] font-semibold leading-tight tracking-tight text-park-cream sm:text-4xl;
+  }
+
+  .park-main {
+    @apply mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-10;
+  }
+
+  .park-greeting {
+    @apply mb-10 text-[1.0625rem] leading-[1.7] text-park-brown-muted sm:text-lg sm:leading-[1.75];
+  }
+
+  .park-greeting::first-letter {
+    @apply float-left mr-1 mt-0.5 font-serif text-4xl font-semibold leading-none text-park-green;
+  }
+
+  .park-section-heading {
+    @apply mb-4 border-b-2 border-park-sand pb-2 font-serif text-xl font-semibold tracking-tight text-park-green-dark sm:text-2xl;
+  }
+
+  .park-tips-card {
+    @apply space-y-4 rounded-sm border border-park-sand bg-white p-5 shadow-park sm:p-6;
+  }
+
+  .park-tip {
+    @apply flex gap-3 text-[0.9375rem] leading-relaxed text-park-brown sm:text-base;
+  }
+
+  .park-tip__marker {
+    @apply mt-0.5 shrink-0 font-serif text-lg leading-none text-park-green;
+  }
+
+  .park-body {
+    @apply space-y-5 text-[1.0625rem] leading-[1.7] text-park-brown-muted sm:text-lg sm:leading-[1.75];
+  }
+
+  #read-more {
+    @apply scroll-mt-4;
+  }
+
+  .park-callout {
+    @apply rounded-sm border-l-4 border-park-amber bg-white px-5 py-5 shadow-park;
+  }
+
+  .park-callout__label {
+    @apply mb-2 block font-sans text-xs font-bold uppercase tracking-[0.15em] text-park-amber;
+  }
+
+  .park-callout p {
+    @apply text-[1.0625rem] font-medium leading-relaxed text-park-brown sm:text-lg;
+  }
+
+  .park-link {
+    @apply font-semibold text-park-green underline decoration-park-sand decoration-2 underline-offset-2 transition-colors hover:text-park-green-light hover:decoration-park-green;
+  }
+
+  .park-footer {
+    @apply border-t-2 border-park-sand bg-park-tan/50 px-4 py-7 text-center font-sans text-sm leading-relaxed text-park-brown-muted sm:px-6;
+  }
+
+  .park-figure {
+    @apply mb-10 overflow-hidden rounded-sm border border-park-sand shadow-park;
+  }
+
+  .park-figure img {
+    @apply block h-auto w-full object-cover;
+  }
+
+  .park-figure figcaption {
+    @apply bg-park-tan/40 px-4 py-2.5 font-sans text-sm leading-snug text-park-brown-muted;
+  }
+}
